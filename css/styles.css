@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --primary-font: Lexend Deca, sans-serif;
+    --secondary-font: Big Shoulders Display, sans-serif;
+  
+    --fw-bold: 700;
+    --fw-regular: 400;
+  
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    line-height: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  
+  body {
+    font-family: var(--primary-font);
+    font-weight: var(--fw-regular);
+    color: var(--transparent-white);
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .preview-card{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 0.5rem;
+  }
+  
+  .section {
+    width: 300px;
+    height: 500px;
+    padding: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .sedan-section {
+    background-color: var(--bright-orange);
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .suvs-section {
+    background-color: var(--dark-cyan);
+  }
+
+  .luxury-section {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .section-title {
+    font-family: var(--secondary-font);
+    font-weight: var(--fw-bold);
+    font-size: 2.3rem;
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+  }
+
+  .section img {
+    width: 4rem;
+  }
+
+  .btn-link {
+    width: 9rem;
+    height: 3rem;
+    border-radius: 100vw;
+    text-align: center;
+    border: 3px solid var(--very-light-gray);
+    outline: none;
+    line-height: 2.5rem;
+    transition: 0.2s ease;
+    background-color: var(--very-light-gray);
+  }
+
+  .sedan-btn {
+    color: var(--bright-orange);
+  }
+
+  .suvs-btn {
+    color: var(--dark-cyan);
+  }
+
+  .luxury-btn {
+    color: var(--very-dark-cyan);
+  }
+
+  .btn-link:hover {
+    color: var(--very-light-gray);
+  }
+
+  .sedan-btn:hover {
+    background-color: var(--bright-orange);
+  }
+
+  .suvs-btn:hover {
+    background-color: var(--dark-cyan);
+  }
+
+  .luxury-btn:hover {
+    background-color: var(--very-dark-cyan);
+  }
+
+  @media (max-width: 500px) {
+  .preview-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .section{
+    height: 450px;
+    padding: 1rem 2.6rem;
+    justify-content: space-evenly;
+  }
+
+  .sedan-section {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .suvs-section {
+    background-color: var(--dark-cyan);
+  }
+
+  .luxury-section {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}

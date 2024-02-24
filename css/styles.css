@@ -61,7 +61,7 @@
     font-family: var(--primary-font);
     font-weight: var(--fw-regular);
     color: var(--transparent-white);
-    font-size: 15px;
+    font-size: 0.9375rem;
     background-color: var(--very-light-gray);
     display: flex;
     justify-content: center;
